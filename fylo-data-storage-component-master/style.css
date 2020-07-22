@@ -22,7 +22,7 @@ h1{
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 100px;
     position: relative;
 }
 
@@ -172,4 +172,39 @@ input ~ .number{
     color: #000;
     font-weight: 700;
     font-size: 20px;
+}
+
+@media screen and (max-width: 840px){
+    body{
+       background-color: hsl(229, 57%, 11%);
+       background: url("./images/bg-mobile.png") center center no-repeat;
+       background-size: cover;
+    }
+
+    .container-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    .container-options{
+        margin: 20px 0px;
+        width: 100%;
+        padding: 10px 50px;
+        min-width: 0;
+    }
+
+    .storage{
+        width: 100%;
+        min-width: 0;
+    }
+
+    .bar-progress{
+        width: 50%;
+    }
+
+    .ballon{
+        display: none;
+    }
 }
