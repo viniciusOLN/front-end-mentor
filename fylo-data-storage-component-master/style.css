@@ -23,6 +23,7 @@ h1{
     align-items: flex-end;
     justify-content: center;
     margin-bottom: 80px;
+    position: relative;
 }
 
 .container-options{
@@ -145,4 +146,30 @@ input ~ .number{
 
 .end{
     float: right;
+}
+
+.ballon{
+    background-color: #fff;
+    color:hsl(229, 7%, 55%);
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 80%;
+}
+
+.ballon::after{
+    content: '';
+    border: 30px solid transparent;
+    border-right-color: white;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+
+.ballon .number{
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
 }
