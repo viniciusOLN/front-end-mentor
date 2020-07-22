@@ -4,7 +4,8 @@ body{
     font-size: 14px;
     font-family: 'Raleway', sans-serif;
     background: url(./images/bg-desktop.png) no-repeat;
-    background-position: bottom -30% right 100%;
+    background-position: center bottom;
+    background-size: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -19,18 +20,19 @@ h1{
 
 .container-main{
     display: flex;
-    align-self: center;
+    align-items: flex-end;
     justify-content: center;
     margin-bottom: 80px;
 }
 
 .container-options{
-    width: 50%;
+    min-width: 300px;
     background-color:  hsl(228, 56%, 26%);
-    padding: 30px 0px 30px 30px;
+    padding: 30px 0px 0px 30px;
     border-radius: 8px;
     border-top-right-radius: 100px;
     margin-right: 20px;
+    height: 150px;
 }
 
 .container-options > a{
@@ -49,7 +51,6 @@ h1{
     background-color: hsl(229, 57%, 11%);
     border: none;
     margin: 6px;
-    color: hsl(243, 100%, 93%);
     background-repeat: no-repeat;
     background-position: center center;
     cursor: pointer;
@@ -69,7 +70,79 @@ h1{
 
 .storage{
     display: flex;
+    flex-direction: column;
     background-color: hsl(228, 56%, 26%);
+    justify-content: center;
     color: hsl(229, 7%, 55%);
-    padding: 40px;
+    padding: 0px 40px;
+    min-width: 400px;
+    font-weight: 400;
+    border-radius: 10px;
+    height: 150px;
+    /* margin-top: 50px; */
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background:  hsl(229, 57%, 11%);
+    border: 2px solid hsl(229, 57%, 11%);
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    cursor: pointer;
+  }
+
+.limit{
+    position: relative;
+}
+
+.bar-progress{
+    width: 204px;
+    height: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+
+.storage > p{
+    margin-bottom: 10px;
+}
+
+.number{
+    font-weight: 700;
+    color: hsl(243, 100%, 93%);
+}
+
+input ~ .number{
+    margin-top: 10px;
+}
+
+.start{
+    align-self: flex-start;
+    float: left;
+}
+
+.end{
+    float: right;
 }
