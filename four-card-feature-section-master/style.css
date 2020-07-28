@@ -124,13 +124,53 @@ body{
 
    .container-main{
        flex-direction: column;
+       justify-content: center;
+       align-content: center;
        width: 80%;
    }
 
    .container-inside{
-       width: auto;
-       min-width: auto;
+       width: 500px;
        margin: 10px 0px;
    }
+
+   .center{
+       width: auto;
+   }
+
+}
+
+@media only screen and (max-width: 560px){
+
+    .container-inside{
+        width: 80%;
+        min-width: auto;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .center .container-inside:nth-child(2){
+        margin-top: 10px;
+    }
+
+    .title{
+        margin-top: 50px;
+    }
+
+    .title-page{
+        font-size: 16px;
+    }
+
+    .title h2 + h2{
+        font-size: 14px;
+    }
+
+    .subtitle-page{
+        max-width: 80%;
+    }
 
 }
