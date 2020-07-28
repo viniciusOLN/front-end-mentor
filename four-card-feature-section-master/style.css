@@ -15,4 +15,51 @@ body{
     font-family: 'Poppins';
     font-size: 15px;
     text-align: center;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.title{
+    margin-top: 50px;
+}
+
+.title-page{
+    font-size: 23px;
+    letter-spacing: .5pt;
+    font-weight: 300;
+    color:hsl(234, 12%, 34%);
+    line-height: 35px;
+}
+
+.title h2 + h2{
+    font-weight: bolder;
+}
+
+.subtitle-page{
+    color:hsl(234, 12%, 34%);
+    font-size: 14px;
+    max-width: 40%;
+    margin: 0 auto;
+    letter-spacing: .5pt;
+    line-height: 22px;
+    font-weight: 300;
+}
+
+.container-main{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    flex-direction: row;
+}
+
+.container-inside{
+    max-width: 200px;
+    height: auto;
+    box-shadow: -5px 10px 50px rgba(0, 0, 0, 0.212);
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    margin: 20px;
 }
