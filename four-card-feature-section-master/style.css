@@ -127,4 +127,10 @@ body{
        width: 80%;
    }
 
+   .container-inside{
+       width: auto;
+       min-width: auto;
+       margin: 10px 0px;
+   }
+
 }
